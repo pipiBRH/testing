@@ -1,0 +1,12 @@
+timeout: 1800s
+steps:
+  - name: "gcr.io/cloud-builders/npm:current"
+    args: ["i"]
+    id: "download-package"
+  - name: "gcr.io/cloud-builders/npm:current"
+    args: ["test"]
+    id: "testing"
+    env:
+      - "GOOGLE_APPLICATION_CREDENTIALS=a8843526-79283010232f.json"
+tags:
+  - "testing"

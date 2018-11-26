@@ -1,0 +1,15 @@
+node_modules
+secret
+.eslintrc.json
+*.txt
+text.js
+ocr.js
+*.jpeg
+*.png
+tempCode*
+death.js
+.vscode
+.idea
+Untitled*
+*.html
+test_caes
